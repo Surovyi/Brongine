@@ -11,14 +11,14 @@ workspace "Brongine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
--- IncludeDir = {}
--- IncludeDir["GLFW"] = "Brongine/vendor/glfw/include"
+IncludeDir = {}
+IncludeDir["GLFW"] = "Brongine/vendor/GLFW/include"
 -- IncludeDir["GLAD"] = "Brongine/vendor/glad/include"
 -- IncludeDir["ImGui"] = "Brongine/vendor/imgui"
 -- IncludeDir["glm"] = "Brongine/vendor/glm"
 
 -- group "Dependencies"
---     include "Brongine/vendor/glfw"
+    include "Brongine/vendor/GLFW"
 --     include "Brongine/vendor/glad"
 --     include "Brongine/vendor/imgui"
 -- group ""
@@ -50,7 +50,7 @@ project "Brongine"
     includedirs {
         "%{prj.name}/src",
         -- "%{prj.name}/vendor/spdlog/include",
-        -- "%{IncludeDir.GLFW}",
+        "%{IncludeDir.GLFW}",
         -- "%{IncludeDir.GLAD}",
         -- "%{IncludeDir.ImGui}",
         -- "%{IncludeDir.glm}"
@@ -70,7 +70,7 @@ project "Brongine"
         defines {
             "BRO_PLATFORM_WINDOWS",
             "BRO_BUILD_DLL",
-            -- "GLFW_INCLUDE_NONE"
+            "GLFW_INCLUDE_NONE"
         }
 
     filter "configurations:Debug"
