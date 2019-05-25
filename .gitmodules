@@ -1,0 +1,3 @@
+[submodule "Brongine/vendor/GLFW"]
+	path = Brongine/vendor/GLFW
+	url = https://github.com/glfw/glfw
