@@ -7,7 +7,7 @@ workspace "Brongine"
         "Distribution"
     }
 
-    startproject "Brongine"
+    startproject "GameBox"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
