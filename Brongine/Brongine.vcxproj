@@ -127,9 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Brongine\Application.h" />
+    <ClInclude Include="src\Brongine\Engine.h" />
     <ClInclude Include="src\bropch.h" />
+    <ClInclude Include="src\Brongine\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Brongine\Application.cpp" />
     <ClCompile Include="src\bropch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
